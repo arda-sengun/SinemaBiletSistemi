@@ -164,8 +164,6 @@ SinemaBiletSistemi
 ├── Business
 ├── DataAccess
 ├── Entities
-├── WebAPI
-├── SinemaBiletDB.sql
 └── SinemaBiletSistemi.Frontend
 ```
 

@@ -1,0 +1,49 @@
+@SinemaBiletSistemi_HostAddress = http://localhost:5227
+
+GET {{SinemaBiletSistemi_HostAddress}}/api/filmler
+Accept: application/json
+
+###
+
+POST {{SinemaBiletSistemi_HostAddress}}/api/filmler
+Content-Type: application/json
+
+{
+  "filmAdi": "Inception",
+  "yonetmen": "Christopher Nolan",
+  "sure": 148,
+  "tur": "Bilim Kurgu",
+  "afisURL": "https://example.com/inception.jpg"
+}
+
+###
+
+GET {{SinemaBiletSistemi_HostAddress}}/api/salonlar
+Accept: application/json
+
+###
+
+POST {{SinemaBiletSistemi_HostAddress}}/api/salonlar
+Content-Type: application/json
+
+{
+  "salonAdi": "Salon 1",
+  "kapasite": 120
+}
+
+###
+
+GET {{SinemaBiletSistemi_HostAddress}}/api/koltuklar
+Accept: application/json
+
+###
+
+POST {{SinemaBiletSistemi_HostAddress}}/api/koltuklar
+Content-Type: application/json
+
+{
+  "salonID": 1,
+  "koltukNo": "A1"
+}
+
+###
